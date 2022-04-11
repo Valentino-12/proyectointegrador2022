@@ -4,9 +4,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.80857;
     font-weight: normal;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 30px;
 }
 a {
-    color: #1f1f1f;
+    color: #51c8f794;
     text-decoration: none !important;
     outline: none !important;
 }
@@ -17,7 +21,7 @@ h1, h2, h3{
         padding: 0 0 10px 0;
         font-weight: normal;
         line-height: normal;
-        color: #111111;
+        color: #d8bebe;
         margin: 0 
    }
    ul, li, ol {
@@ -30,4 +34,36 @@ p {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
+}
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.container{
+    width: 1366px;
+    height: 200px;
+}
+.menu{
+    font-size: 20px;
+}
+.logo{
+    border-radius: 50%;
+}
+header{
+    display: inline;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.listado{
+    font-size: 35px;
+}
+.box-home{
+    color: #4b0d53e5;
+    width: 420px;
+    border: #bd1313;
 }
