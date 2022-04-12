@@ -71,9 +71,15 @@ article{
     font-size: 20px;
 }
 .infoeminem{
-    text-align: center;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 0%;
+    margin: 0%;
 }
 .reproductor1{
+<<<<<<< HEAD
     text-align: center;
 }
 .caja {
@@ -87,3 +93,16 @@ article{
     width: 300px;
     margin-left: 10px;
 }
+=======
+    display: block;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.sectiondetail{
+    display: flex;
+    justify-content: space-between;
+}
+.botonplaylist{
+    align-self: flex-start;
+}
+>>>>>>> 35cf5d12b5fb6cea7e80cd959e4c0137326c2999
