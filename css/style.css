@@ -44,9 +44,11 @@ button {
 .container{
     width: 1366px;
     height: 200px;
+    display: flex;
 }
 .menu{
     font-size: 20px;
+    float: right;
 }
 .logo{
     border-radius: 50%;
@@ -63,9 +65,7 @@ article{
     font-size: 45px;
 }
 .box-home{
-    color: #4b0d53e5;
     width: 420px;
-    border: #bd1313;
 }
 .elementos{
     font-size: 20px;
@@ -75,5 +75,15 @@ article{
 }
 .reproductor1{
     text-align: center;
+}
+.caja {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.texto {
+    width: 300px;
+    margin-left: 10px;
 }
