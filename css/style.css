@@ -71,9 +71,22 @@ article{
     font-size: 20px;
 }
 .infoeminem{
-    text-align: center;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 0%;
+    margin: 0%;
 }
 .reproductor1{
-    text-align: center;
-
+    display: block;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.sectiondetail{
+    display: flex;
+    justify-content: space-between;
+}
+.botonplaylist{
+    align-self: flex-start;
 }
