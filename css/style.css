@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     color: #666666;
     font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -6,7 +7,23 @@ body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+footer p {
+    background-color: black;
+    padding: 10px;
 }
 a {
     color: #07dcf8;
@@ -38,19 +55,20 @@ p {
 }
 header{
     width: 100%;
-    height: 170px;
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 nav .menu{
-    width: 1300px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+.liPlaylist{
+    margin-right: 20px;
 }
 .submenu{
     display: flex;
@@ -91,7 +109,8 @@ button {
     border-radius: 50%;
     float: left;
 }
-article{
+.contenido{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -99,11 +118,12 @@ article{
 .listado{
     font-size: 45px;
 }
-.box-home{
-    width: 420px;
-}
+
 .elementos{
+    display: flex;
     font-size: 20px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .infoeminem{
     display: block;
@@ -137,6 +157,9 @@ article{
     width: 150px;
 }
 .texto {
-    width: 300px;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }

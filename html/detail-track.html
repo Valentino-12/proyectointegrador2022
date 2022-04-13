@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Detail Track</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img class="logo" src="../img/Logo.jpg" width="100px" height="100px"><p class="menu"><a href="./index.html">Menu</a></p>
-            <form class="search">
-                <input type="text" placeholder="Search">
-                <button><img src="../img/search_icon.png"></button>
-            </form>
+        <div class="menu">
+            <a href="index.html"><img class="logo" src="../img/Logo.jpg" width="120px" height="120px" alt="logo"></a>
         </div>
-    </header>
-    <section class="sectiondetail">
+        <nav>
+                <ul class="menu">
+                            <li class="liPlaylist"><a href="./playlist.html" class="anav">Playlist</a></li>
+                            <li><a href="./geners.html" class="anav">Generos</a></li>
+               </ul>
+        </nav>
+        <form action="./search-results.html">
+            <input id="buscador" type="text" placeholder="Buscador..."><button type="submit"><i class="icon-search"></i></button>
+        </form>
+     </header>
+     <section class="sectiondetail">
         <div class="imgeminem">
             <img src="../img/eminem-slimshady.jpeg" width="250px" height="300px"> 
         </div>
@@ -34,5 +40,11 @@
             <button type="submit">Agregar a playlist</button>
         </div>  
     </section>
+    <footer>
+        <p>Lucas Stareselsky</p>
+        <p>Matias Roccia</p>
+        <p>Valentino Gabay</p>
+    </footer>
+    
 </body>
 </html>
