@@ -114,10 +114,20 @@ article{
     margin: 0%;
 }
 .reproductor1{
-
     text-align: center;
 }
-.caja {
+.sectiondetail{
+    display: flex;
+    justify-content: space-around;
+}
+.botonplaylist{
+    align-self: flex-start;
+    color: white;
+}
+.imgeminem{
+    margin-right: 150px;
+}
+.caja{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -130,15 +140,3 @@ article{
     width: 300px;
     margin-left: 10px;
 }
-    display: block;
-    flex-direction: column;
-    align-self: flex-start;
-}
-.sectiondetail{
-    display: flex;
-    justify-content: space-between;
-}
-.botonplaylist{
-    align-self: flex-start;
-}
-
