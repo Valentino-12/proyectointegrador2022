@@ -143,6 +143,7 @@ button {
 .botonplaylist{
     align-self: flex-start;
     color: white;
+    border-radius: 12px;
 }
 .imgeminem{
     margin-right: 150px;
