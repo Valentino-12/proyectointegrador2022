@@ -128,6 +128,9 @@ button {
     flex-wrap: nowrap;
     align-items: center;
     margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
 }
 .texto {
     margin-left: 10px;
@@ -137,10 +140,13 @@ button {
     flex-direction: row;
 }
 .caja-track{
-    width: 490px;
+    width: 550px;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
 }
 .text-detail{
     padding-left: 15px;
@@ -154,10 +160,13 @@ iframe{
     margin-top: 20px;
 }
 .caja-album{
-    
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    width: 700px;
 
 }
 .text-detail button{
@@ -188,6 +197,21 @@ iframe{
 .bodyindex{
     display: flex;
     flex-direction: column;
- 
 
+}
+.divartist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 30px;
+}
+.artistuno{
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.h1artist{
+    color: #000000;
 }
