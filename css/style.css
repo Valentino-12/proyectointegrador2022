@@ -181,18 +181,18 @@ iframe{
     padding: 10px;
 }
 .links{
-    background-color: #000000;
+    background-color: black;
     width: 300px;
     display: none;
 }
 .links a:hover{
-    background-color: #f1f1f1;
+    background-color: #353232;
 }
 .desplegable:hover .links{
     display: block;
 }
 .desplegable{
-    position: relative;
+    position: absolute;
 }
 .bodyindex{
     display: flex;
@@ -228,4 +228,41 @@ iframe{
     text-align: center;
     margin-top: 40px;
     font-size: 45px;
+}
+
+
+
+/* Responsive */
+@media(max-width:450px){
+
+    main{
+        max-width: 450px;
+    }
+
+    #buscador {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    header img{
+        width: 75px;
+        height: 75px;
+    }
+
+    header form button {
+        padding: 0;
+        width: 30px;
+    }
+
+    .navegacion ul{
+        overflow-wrap: anywhere;
+    }
+    
+    .contenido {
+        overflow: auto;
+    }
 }
