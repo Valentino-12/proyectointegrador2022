@@ -123,6 +123,25 @@ button {
     flex-direction: row;
     justify-content: center;
     align-self: flex-start;
+    padding: 0%;
+    margin: 0%;
+}
+.reproductor1{
+    text-align: center;
+}
+.sectiondetail{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.botonplaylist{
+    align-self: flex-start;
+    color: white;
+    border-radius: 12px;
+}
+.imgeminem{
+    margin-right: 150px;
 }
 .caja{
     display: flex;
@@ -230,8 +249,6 @@ iframe{
     margin-top: 40px;
     font-size: 45px;
 }
-
-
 
 /* Responsive */
 @media(max-width:450px){
