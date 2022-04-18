@@ -60,12 +60,10 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
 }
 .menu{
     padding: 20px;
     font-size: 20px;
-    color: #e84855;
 }
 nav .menu{
     display: flex;
@@ -113,7 +111,7 @@ button {
 }
 .listado{
     font-size: 45px;
-    margin-top: 20px;
+    justify-content:space-around;
 }
 
 .elementos{
@@ -159,16 +157,16 @@ button {
     flex-direction: row;
 }
 .caja-track{
-    width: 480px;
-    margin-top: 50px;
+    width: 490px;
+    margin-top: 40px;
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .text-detail{
-    padding: 10px;
+    padding-left: 15px;
     font-size: 15px;
 }
-.text-detail p{
+.text-detail h3{
     font-size: 18px;
     margin-top: 7px;
 }
@@ -177,8 +175,33 @@ iframe{
 }
 .caja-album{
     width: 600px;
-    margin-top: 50px;
-    display: flex;
-    align-items: flex-start;
+    margin-top: 40px;
+    display: flex wrap;
+
+}
+.text-detail button{
+    background-color: rgb(35, 32, 177);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}
+.links a{
+    display: block;
+    padding: 10px;
+}
+.links{
+    background-color: #000000;
+    width: 300px;
+    display: none;
+}
+.links a:hover{
+    background-color: #f1f1f1;
+}
+.desplegable:hover .links{
+    display: block;
+}
+.contenido-album{
+    width: 1700px;
 }
 
