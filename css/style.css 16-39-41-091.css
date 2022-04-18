@@ -1,25 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     box-sizing: border-box;
   }
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(16,2,59,1) 25%, rgba(53,9,121,1) 51%, rgba(0,119,255,1) 100%);
     min-height: 100vh;
-    align-items: center;
 }
 footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: auto;
     color: white;
-    padding-bottom: 10px;
+    margin-top: 50px;
 }
 footer p {
     background-color: black;
@@ -59,7 +56,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .menu{
     padding: 20px;
@@ -112,6 +109,7 @@ button {
 .listado{
     font-size: 45px;
     justify-content:space-around;
+    margin-top: 20px;
 }
 
 .elementos{
@@ -148,6 +146,9 @@ button {
     flex-wrap: nowrap;
     align-items: center;
     margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
 }
 .texto {
     margin-left: 10px;
@@ -157,10 +158,13 @@ button {
     flex-direction: row;
 }
 .caja-track{
-    width: 490px;
+    width: 550px;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 10px;
+    border-radius: 20px;
 }
 .text-detail{
     padding-left: 15px;
@@ -174,10 +178,13 @@ iframe{
     margin-top: 20px;
 }
 .caja-album{
-    width: 600px;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 10px;
+    border-radius: 20px;
     margin-top: 40px;
-    display: flex wrap;
-
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
 }
 .text-detail button{
     background-color: rgb(35, 32, 177);
@@ -191,17 +198,88 @@ iframe{
     padding: 10px;
 }
 .links{
-    background-color: #000000;
+    background-color: black;
     width: 300px;
     display: none;
 }
 .links a:hover{
-    background-color: #f1f1f1;
+    background-color: #353232;
 }
 .desplegable:hover .links{
     display: block;
 }
-.contenido-album{
-    width: 1700px;
+.desplegable{
+    position: absolute;
+}
+.bodyindex{
+    display: flex;
+    flex-direction: column;
+}
+.divartist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 30px;
+}
+.artistuno{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    width: 320px;
+}
+.h1artist{
+    color: #000000;
+}
+.all-gender{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.genero{
+    margin: 20px;
+}
+.h1gender{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 45px;
 }
 
+
+
+/* Responsive */
+@media(max-width:450px){
+
+    main{
+        max-width: 450px;
+    }
+
+    #buscador {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    header img{
+        width: 75px;
+        height: 75px;
+    }
+
+    header form button {
+        padding: 0;
+        width: 30px;
+    }
+
+    .navegacion ul{
+        overflow-wrap: anywhere;
+    }
+    
+    .contenido {
+        overflow: auto;
+    }
+}
