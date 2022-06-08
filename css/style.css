@@ -103,7 +103,7 @@ button {
 .contenido{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content:space-around;
 }
 .listado{
@@ -186,7 +186,7 @@ iframe{
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 1300px;
 }
 .text-detail button{
     background-color: rgb(35, 32, 177);
