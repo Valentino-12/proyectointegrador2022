@@ -258,6 +258,14 @@ iframe{
 .genero{
     margin: 20px;
 }
+.genero a img{
+    width: 350px;
+    height: 350px;
+}
+.contenido-album .caja-album img{
+    width: 250px;
+    height: 250px;
+}
 .h1gender{
     text-align: center;
     margin-top: 40px;
@@ -271,6 +279,10 @@ section .playlist ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.imgindex {
+    width: 100px;
+    height: 100px;
 }
 section ul li {
     margin-top: 10px;

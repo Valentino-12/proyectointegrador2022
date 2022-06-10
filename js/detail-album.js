@@ -12,7 +12,7 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums'
 
 
         for(let i = 0; i ; i++){
-            cajas[i].innerHTML = `<img src="../img/album eminem home.webp?id=${info.data[i].cover_medium}" width="200px" height="200px">
+            cajas[i].innerHTML = `<img src="../img/album eminem home.webp?id=${info.data[i].cover_medium}>
                 <h2><a href="./detail-album.html?id=${info.data[i].title}"> </a></h2>
                 <h3>Artista: <a href="./detail-artist.html?id=${info.data[i].artist.name}"></a></h3>
                 <h3>Genero: <a href="./geners.html"> Rap</a></h3>
