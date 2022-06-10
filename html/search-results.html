@@ -22,9 +22,14 @@
         <form action="./search-results.html">
             <input id="buscador" type="text" placeholder="Buscador..."><button type="submit"><i class="icon-search"></i></button>
         </form>
-     </header>
-
-     <!--  aca va el codigo   -->
+    </header>
+    <main>
+        <section id="resultados">
+           <h1 class="titulo-section"></h1>
+           <h1 class="titulo-section" id="no-encontrado">No hay datos concidentes con el termino buscado</h1>
+           <img src="./images/loading.gif" alt="" id="gif-loading">
+        </section>
+    </main>
 
     <footer>
         <p>Lucas Stareselsky</p>
@@ -32,5 +37,6 @@
         <p>Valentino Gabay</p>
     </footer>
     <script src="../js/search-results.js"></script>
+    <script src="../js/comprobar.js"></script>
 </body>
 </html>

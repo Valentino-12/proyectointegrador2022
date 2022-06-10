@@ -217,6 +217,20 @@ iframe{
     display: flex;
     flex-direction: column;
 }
+.titulo-section{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#no-encontrado{
+    display: none;
+}
+#resultados{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
 .divartist{
     width: 100%;
     display: flex;
