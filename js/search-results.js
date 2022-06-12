@@ -1,5 +1,5 @@
-window.addEventListener('load', function(){
-    document.querySelector('#gif-loading').style.display = 'none';
+window.addEventListener('load', function() {
+    document.querySelector('#gif-loading');
 
 
 

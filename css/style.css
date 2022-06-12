@@ -7,7 +7,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     background: linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(16,2,59,1) 25%, rgba(53,9,121,1) 51%, rgba(0,119,255,1) 100%);
-    min-height: 100vh;
 }
 footer {
     position: relative;
@@ -135,6 +134,20 @@ button {
     flex-wrap: wrap;
     margin: 30px;
 }
+.pos{
+    max-width: 85px;
+    max-height: 90%;
+    border: black 1px solid;
+    border-radius: 20%;
+    float: left;
+}
+.nameplay{
+    margin-left: 125px;
+    margin-top: 40px;
+    padding: 12px;	
+    font-size: 20px;
+    color: white;	
+}
 .botonplaylist{
     align-self: flex-start;
     color: white;
@@ -246,6 +259,15 @@ iframe{
     width: 320px;
     margin-top: 20px;
 }
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+}
 .h1artist{
     color: #000000;
 }
@@ -254,6 +276,17 @@ iframe{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
+}
+.all-gender article{
+    box-shadow: 5px 8px 12px black;
+}
+.all-gender a b{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .genero{
     margin: 20px;
@@ -265,6 +298,15 @@ iframe{
 .contenido-album .caja-album img{
     width: 250px;
     height: 250px;
+}
+.remove{
+    background-color: rgb(35, 32, 177);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
 }
 .h1gender{
     text-align: center;
@@ -283,6 +325,22 @@ section .playlist ul {
 .imgindex {
     width: 100px;
     height: 100px;
+}
+.songs{
+    width: 85vh;
+}
+
+.nomer{
+    float: left;	
+    margin-right: 7px;	
+    padding: 10px 8px;
+}
+.imgnosignal{
+    max-width: 200px;
+    max-height: 250px;
+    border: black 1px solid;
+    border-radius: 20%;
+    float: left;
 }
 section ul li {
     margin-top: 10px;

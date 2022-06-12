@@ -14,64 +14,29 @@
             <a href="index.html"><img class="logo" src="../img/Logo.jpg" width="120px" height="120px" alt="logo"></a>
         </div>
         <nav>
-                <ul class="menu">
-                            <li class="liPlaylist"><a href="./playlist.html" class="anav">Playlist</a></li>
-                            <li><a href="./geners.html" class="anav">Generos</a></li>
-               </ul>
+            <ul class="menu">
+                <li class="liPlaylist"><a href="./playlist.html" class="anav">Playlist</a></li>
+                <li><a href="./geners.html" class="anav">Generos</a></li>
+            </ul>
         </nav>
         <form action="./search-results.html">
             <input id="buscador" type="text" placeholder="Buscador..."><button type="submit"><i class="icon-search"></i></button>
         </form>
-     </header>
-        <section>
-            <h1 class = "titulo">PLAYLIST</h1>
-            <div class = "playlist">
-                <h3>Canciones Favoritas:</h3>
-                <ul>
-                    <li>
-                        <div class = 'contenedorCanciones'>
-                            <img src="../img/eminem-slimshady.png" width="150px" height="150px">
-                            <p>The Real Slim Shady - <b>Eminem</b></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorCanciones">
-                            <div>
-                                <img src="../img/eminem-withoutme.jpg" width="150px" height="150px">
-                            </div>
-                            <div>
-                                <p>Without Me - <b>EMINEM</b></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class = 'contenedorCanciones'>
-                            <img src="../img/goosebumps.png" width="150px" height="150px">
-                            <p>Goosebumps - <b>Travis Scott</b></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class = 'contenedorCanciones'>
-                            <img src="../img/crimen home.jpg" width="150px" height="150px">
-                            <p>Crimen - <b>Gustavo Cerati</b></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class = 'contenedorCanciones'>
-                            <img src="../img/time capsule.jpg" width="150px" height="150px">
-                            <p>Time Capsule - <b>Steve Aoki </b></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorCanciones">
-                            <img src="../img/oioi album.jpg" width="150px" height="150px">
-                            <p>Stop It - <b>FISHER</b> </p>
-                        </div>
-                    </li>
-                </ul>    
-            </div>
-        </section>
-    </div>
+    </header>
+
+    <section>
+        <h1 class = "titulo">PLAYLIST</h1>
+        <h3 class="subtitle">Estas son tus Canciones Favoritas:</h3>
+        <button class="remove">Eliminar Playlist<i class="fas fa-times"></i></button>
+        <div class="playlist">
+            <article class="song">
+                <p class="nomer"> - </p>
+                <a href="detail-track.html"> <img class="pos" src= "../img/goosebumps.png">
+                <p class="nameplay">Goosebumps</p></a>
+            </article>
+        </div>  
+    </section>
+
     <footer>
         <p>Lucas Stareselsky</p>
         <p>Matias Roccia</p>

@@ -12,10 +12,15 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks'
 
 
         for(let i = 0; i < 5; i++){
-            cajas[i].innerHTML = `<a href="./detail-artist.html?id=${info.data[i].artist.id}"><img class="imgindex" src="${info.data[i].artist.picture_medium}" alt=""></a><div class="texto"><h3><a href="./detail-track.html?id=${info.data[i].id}">${info.data[i].title}</a></h3><h3><a href="./detail-artist.html?id=${info.data[i].artist.id}">- ${info.data[i].artist.name}</a></h3></div>`
+            cajas[i].innerHTML = `<a href="./detail-artist.html?id=${info.data[i].artist.id}">
+            <img class="imgindex" src="${info.data[i].artist.picture_medium}" alt=""></a>
+            <div class="texto">
+            <h3><a href="./detail-track.html?id=${info.data[i].id}">${info.data[i].title}</a></h3>
+            <h3><a href="./detail-artist.html?id=${info.data[i].artist.id}">- ${info.data[i].artist.name}</a></h3>
+            </div>`
         }
         
-    })
+    })  
     .catch(function(error){
         console.log(error)
 
