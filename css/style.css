@@ -401,3 +401,7 @@ section .playlist ul li .contenedorCanciones p{
         overflow: auto;
     }
 }
+
+#nameDetailTrack {
+    color: white
+}
