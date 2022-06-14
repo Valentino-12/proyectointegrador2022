@@ -4,12 +4,9 @@ console.log(cajas[0].innerHTML);
 fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks')
     .then(function(datos){
         return datos.json();
-        
     })
     .then(function(info){
-        console.log(info.data[0]);
-        console.log(info.data[0].id);
-
+        console.log(info);
 
         for(let i = 0; i < 5; i++){
             cajas[i].innerHTML = `<a href="./detail-artist.html?id=${info.data[i].artist.id}">

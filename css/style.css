@@ -130,10 +130,11 @@ button {
 }
 .sectiondetail{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 30px;
 }
+
 .pos{
     max-width: 85px;
     max-height: 90%;
@@ -173,7 +174,7 @@ button {
     flex-direction: row;
 }
 .caja-track{
-    width: 550px;
+    width: -webkit-fill-available;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -184,6 +185,8 @@ button {
 .text-detail{
     padding-left: 15px;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .text-detail h3{
     font-size: 18px;
@@ -198,7 +201,6 @@ iframe{
     border-radius: 20px;
     margin-top: 40px;
     display: flex;
-    flex-wrap: wrap;
     width: 1300px;
 }
 .text-detail button{
@@ -214,8 +216,11 @@ iframe{
 }
 .links{
     background-color: black;
-    width: 300px;
-    display: none;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1000px;
 }
 .links a:hover{
     background-color: #353232;
