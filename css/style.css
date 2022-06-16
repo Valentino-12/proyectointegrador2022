@@ -285,9 +285,11 @@ iframe{
 }
 .all-gender article{
     box-shadow: 5px 8px 12px black;
+    border-radius: 20px;
+
 }
 .all-gender article a b{
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     transform: translate(-50%, -50%);
 }
@@ -296,10 +298,13 @@ iframe{
     margin-top: 100px;
     width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 .genero a img{
     width: 300px;
     height: 300px;
+    border-radius: 20px;
+
 }
 .contenido-album .caja-album img{
     width: 250px;
