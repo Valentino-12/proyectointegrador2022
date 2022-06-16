@@ -280,25 +280,26 @@ iframe{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin-top: 40px;
 }
 .all-gender article{
     box-shadow: 5px 8px 12px black;
 }
-.all-gender a b{
+.all-gender article a b{
     font-size: 50px;
-    position: absolute;
     color: white;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 .genero{
     margin: 20px;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
 }
 .genero a img{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 .contenido-album .caja-album img{
     width: 250px;
