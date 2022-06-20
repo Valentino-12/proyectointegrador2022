@@ -2,14 +2,14 @@ const Artist = document.querySelector("#detailArtist")
 const IDArtist = Number(location.search.slice(4)) 
 
 function peticion(){
-    fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists`)
     .then(function(datos){
         return datos.json();
     })
     .then(function(info){
         for(let i = 0; i < info.data.length; i++){
             if(info.data[i].id === IDArtist){
-                fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${IDArtist}/top?limit=5`)
+                fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${IDArtist}/top?limit=5`)
                 .then(function(datos){
                     return datos.json()
                 })

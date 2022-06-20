@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
 
         for (let i = 0; i < añadir.length; i++) {
 
-            fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${añadir[i]}`)
+            fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${añadir[i]}`)
             .then(function(response) {
                 return response.json();
             })   
