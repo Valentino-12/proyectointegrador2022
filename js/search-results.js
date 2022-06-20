@@ -13,7 +13,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
         if(info.data.length==0){
             titulo.innerHTML = `no se ha encontrado resultados de busqueda para: ${q}`
         } else{
-            titulo.innerHTML = `resultado de busqueda para ${q}`
+            titulo.innerHTML = `Resultado de busqueda para ${q}`
         }
         let section=document.querySelector('#resultados')
         for(let i=0;i<info.data.length;i++){

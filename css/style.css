@@ -239,6 +239,7 @@ iframe{
     font-size: 32px;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
     width: 100%;
 }
 #no-encontrado{
