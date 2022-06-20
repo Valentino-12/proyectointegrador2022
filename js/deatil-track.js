@@ -18,8 +18,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
             <h3>Album: <a href="./detail-album.html">${info.album.title}</a></h3>
             <button class="añadir">Añadir playlist</button>
             </div> </div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${info.id}?tracklist=false" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-            `
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${info.id}?tracklist=false" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
             
             document.querySelector(".añadir").addEventListener("click", function(){
                 let mandar;
@@ -36,5 +35,4 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     )
     .catch(function(error){
         console.log(error)
-
     })

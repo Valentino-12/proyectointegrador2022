@@ -340,27 +340,19 @@ iframe{
     margin-top: 60px;
     font-size: 45px;
 }
-section .playlist ul {
-    width: 100%;
-    max-width: 1400px;
-    padding: 0px;
+section .playlist {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .imgindex {
     width: 100px;
     height: 100px;
 }
-.songs{
-    width: 85vh;
-}
-
-.nomer{
-    float: left;	
-    margin-right: 7px;	
-    padding: 10px 8px;
+.song{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 100%;
 }
 .imgnosignal{
     max-width: 200px;
