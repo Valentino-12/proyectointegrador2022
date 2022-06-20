@@ -23,19 +23,18 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             `
             
             document.querySelector(".añadir").addEventListener("click", function(){
-                let arrayIfañadir;
-                if (sessionStorage.getItem("favs") != null) {
-                    arrayIfañadir = sessionStorage.getItem("favs").split(",")
-                    arrayIfañadir.push(id)
+                let mandar;
+                if (sessionStorage.getItem("pref") != null) {
+                    mandar = sessionStorage.getItem("pref").split(",")
+                    mandar.push(id)
                 } else {
-                    arrayIfañadir = []
-                    arrayIfañadir.push(id)
+                    mandar = []
+                    mandar.push(id)
                 }
-                sessionStorage.setItem("favs", arrayIfañadir);
+                sessionStorage.setItem("pref", mandar);
             })
         }
     )
-    
     .catch(function(error){
         console.log(error)
 
