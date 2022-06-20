@@ -21,11 +21,13 @@ function peticion(){
                         <div class="text-detail">
                         <h2><a href="">${info.data[i].name}</a></h2>
                         <h3>Top Tracks:</h3>
-                        <h3> - ${tracks.data[0].title}</h3>
-                        <h3> - ${tracks.data[1].title}</h3>
-                        <h3> - ${tracks.data[2].title}</h3>
-                        <h3> - ${tracks.data[3].title}</h3>
-                        <h3> - ${tracks.data[4].title}</h3>
+                        <div class="detailArtistTracks">
+                            <h3> - ${tracks.data[0].title}</h3>
+                            <h3> - ${tracks.data[1].title}</h3>
+                            <h3> - ${tracks.data[2].title}</h3>
+                            <h3> - ${tracks.data[3].title}</h3>
+                            <h3> - ${tracks.data[4].title}</h3>
+                        </div>
                     </div>
                     `
                 }
