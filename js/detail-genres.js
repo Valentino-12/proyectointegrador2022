@@ -1,5 +1,6 @@
 const Genre = document.querySelector("#detailGenre")
-const IDGenre = Number(location.search.slice(4)) 
+const IDGenre = Number(location.search.slice(7)) 
+console.log(IDGenre)
 
 function peticion(){
     fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/genre')
@@ -9,7 +10,7 @@ function peticion(){
     .then(function(generos){
         for(let i = 0; i < generos.data.length; i++){
             if(generos.data[i].id === IDGenre){
-
+                console.log(generos)
                 fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${IDGenre}/artists`)
                 .then(function(datos){
                     return datos.json()
