@@ -411,3 +411,6 @@ section .playlist ul li .contenedorCanciones p{
 #nameDetailTrack {
     color: white
 }
+#gif-loading {
+    width: 300px;
+}

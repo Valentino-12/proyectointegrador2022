@@ -11,6 +11,6 @@ form.addEventListener('submit', function(e){
       alert('la busqueda no puede tener menos de 3 caracteres')
     }
     else{
-        window.location.href = `search-result.html?q=${q}`;
+        window.location.href = `search-results.html?q=${q}`;
     }
 })

@@ -4,7 +4,7 @@ let id = querystringobj.get('id')
 let album = document.querySelector('.contenido-album');
 console.log(album.innerHTML);
 console.log(album)
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/album/${id}`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     .then(function(datos){
         return datos.json();
         

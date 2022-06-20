@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
 
     let gener = document.querySelector('.all-gender');
 
-    fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/genre')
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre')
     .then(function(response) {
         return response.json();
     })

@@ -2,16 +2,15 @@ let querystring = location.search
 let querystringobj = new URLSearchParams(querystring)
 let id = querystringobj.get('id')
 
-let track = document.querySelector('.sectiondetail');
 
-
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     .then(function(datos){
         return datos.json();
     })
     .then
         (function(info){
             console.log(info);
+            let track = document.querySelector('.sectiondetail');
             track.innerHTML = `<div class="caja-track"> <img src="${info.album.cover_medium}" width="150px" height="150px" >
             <div class="text-detail">
             <h2><a href="./detail-track.html">${info.title}</a></h2>
