@@ -1,43 +1,44 @@
-window.addEventListener("load", function() {
-    let queryString = new URLSearchParams(location.search);
-    let detailgener = document.querySelector('.divartist');
-    let Gen = queryString.get("idGen");
+const Genre = document.querySelector("#detailGenre")
+const IDGenre = Number(location.search.slice(4)) 
 
-    fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${Gen}`)
-
-    .then(function(response) {
-        return response.json();
+function peticion(){
+    fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/genre')
+    .then(function(datos){
+        return datos.json()
     })
-    
-    .then(function(result){
-        console.log(result);
-        
-        detailgener.innerHTML = `<div class="artistuno" style="background: radial-gradient(circle, rgba(148,51,193,1) 0%, rgba(4,2,2,1) 100%);">
-        <h1>${result.name}</h1>
-        <img src="${result.picture}" width="200px" height="200px">
-        </div>`
-    })
-    .catch(function(error){ 
-        console.log('El error fue: ' + error);
-    })
+    .then(function(generos){
+        for(let i = 0; i < generos.data.length; i++){
+            if(generos.data[i].id === IDGenre){
 
+                fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${IDGenre}/artists`)
+                .then(function(datos){
+                    return datos.json()
+                })
+                .then(function(detailsGenre){
+                    Genre.innerHTML = `
+                            <h1>${generos.data[i].name}</h1>
+                            <h3>Artistas:</h3>
+                            <ul class='detailGenreList'>
+                                <li>${detailsGenre.data[1].name} <img src='${detailsGenre.data[1].picture_medium}'></li>
+                                <li>${detailsGenre.data[2].name} <img src='${detailsGenre.data[2].picture_medium}'></li>
+                                <li>${detailsGenre.data[3].name} <img src='${detailsGenre.data[3].picture_medium}'></li>
+                                <li>${detailsGenre.data[4].name} <img src='${detailsGenre.data[4].picture_medium}'></li>
+                                <li>${detailsGenre.data[5].name} <img src='${detailsGenre.data[5].picture_medium}'></li>
+                                <li>${detailsGenre.data[6].name} <img src='${detailsGenre.data[6].picture_medium}'></li>
+                                <li>${detailsGenre.data[7].name} <img src='${detailsGenre.data[7].picture_medium}'></li>
+                                <li>${detailsGenre.data[8].name} <img src='${detailsGenre.data[8].picture_medium}'></li>
+                                <li>${detailsGenre.data[9].name} <img src='${detailsGenre.data[9].picture_medium}'></li>
+                                <li>${detailsGenre.data[10].name} <img src='${detailsGenre.data[10].picture_medium}'></li>
+                                <li>${detailsGenre.data[11].name} <img src='${detailsGenre.data[11].picture_medium}'></li>
+                                <li>${detailsGenre.data[12].name} <img src='${detailsGenre.data[12].picture_medium}'></li>
+                            </ul>
+                    `
+                })
 
-
-    let artistGen = document.querySelector(".artist-gen")
-
-    fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${Gen}/artists`)
-    .then(function(response) {
-        return response.json();            
-    })
-    .then(function(info) {
-        console.log (info)
-        
-        for (let i = 0; i <= info.data.length; i++) {
-
-            artistGen.innerHTML += `<section class="canciones-gen">
-            <a href="./detail-artist.html?idArtist=${info.data[i].id}"> <img class="tops" src="${info.data[i].picture}">
-            <p class="name">${info.data[i].name}</p></a></section>`  
+            }
         }
     })
-})
+}
+
+peticion()
 
