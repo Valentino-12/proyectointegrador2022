@@ -11,10 +11,10 @@ window.addEventListener("load", function() {
         console.log(info.data);
 
         for(let i = 0; i <= info.data.length ; i++){
-            gener.innerHTML += `<article class="genero"><a href="./detail-geners.html"><img src="${info.data[i].picture}"><br><b>${info.data[i].name}</b></a></article>`
+            gener.innerHTML += `<article class="genero"><a href="./detail-geners.html?idGen=${info.data[i].id}"><img src="${info.data[i].picture}"><br><b>${info.data[i].name}</b></a></article>`
         }
     })
     .catch(function(error){
-        console.log(error);
+        console.log('El error fue: ' + error);
     })
 })

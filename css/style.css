@@ -300,6 +300,10 @@ iframe{
     height: 300px;
     border-radius: 20px;
 }
+.genero:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
 .genero a img{
     width: 300px;
     height: 300px;
@@ -319,9 +323,21 @@ iframe{
     float: right;
     margin-right: 20px;
 }
+.artist-gen{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+}
+.canciones-gen{
+    margin: 15px;
+}
 .h1gender{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 45px;
 }
 section .playlist ul {
@@ -371,6 +387,18 @@ section .contenedorCanciones{
 }
 section .playlist ul li .contenedorCanciones p{
     text-align: center;
+}
+
+#detailGenre {
+    text-align: center;
+}
+
+.detailGenreList li {
+    color: white
+}
+
+#detailGenre h1 {
+    font-size: 50px;
 }
 
 /* Responsive */
