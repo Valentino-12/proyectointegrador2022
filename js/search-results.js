@@ -26,13 +26,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
                 <h3><a href="./detail-artist.html?id=${info.data[i].artist.id}"> ${info.data[i].artist.name}</a></h3>
             </div>
         </div>`
-        }
-        
-
-        
-        
+        }  
+         
     })
-    .then(function(){
+    .then(function(){   
         let gif=document.querySelector('#gif-loading')
         gif.style.display='none'
     })  
